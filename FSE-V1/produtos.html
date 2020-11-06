@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <title>
+            Produtos - Full Stack Eletro
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--<link rel="stylesheet" href="./css/estilo.css">-->
+        <script src="./script/funcoes.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-danger navbar-dark justify-content-center col-12">
+            <a class="navbar-brand col-8" href="index.html">
+                <img src="./imagens/logo_fullstackeletro2.gif" alt="logo" style="width:100px;">
+            </a>
+            <ul class="navbar-nav navbar-brand ">
+                <li class="nav-item navbar-brand col-4">
+                    <a class="nav-link text-white" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item navbar-brand col-4">
+                    <a class="nav-link text-white" href="lojas.html">Nossas Lojas</a>
+                </li>
+                <li class="nav-item navbar-brand">
+                    <a class="nav-link text-white col-10" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <h3>Produtos</h3>
+    </div>
+    <hr>
+ <div class="categorias container-fluid">
+        <div class="row">
+            <div class="col" > 
+                <div class="categorias border" style="height: 700px;">
+                    <h3 >Categorias</h3>
+                    <ul>
+                        <li onclick="exibir_todos()" class="g1">Todos (8)</li>
+                        <li onclick="exibir_categoria('geladeira')" class="g1">Geladeiras (2)</li>
+                        <li onclick="exibir_categoria('fogao')" class="f1">Fogões (2)</li>
+                        <li onclick="exibir_categoria('microondas')" class="m1">Microondas(2)</li>
+                        <li onclick="exibir_categoria('lavaroupa')" class="lr1">Lava roupas(2)</li>
+                    </ul>
+           
+                </div>
+            </div>
+         <div class="box_produto container" >
+        <div class="row text-center">
+            <div class="box_produto col" id="geladeira">
+                <img src="./imagens/geladeira1.jpg" width="150px" onclick="destaque(this)">
+                <p class="descricao">Geladeira Brastemp  540 litros</p>
+                <hr>
+                <p class="descricao">De:<s>R$ 6.389,00</s></p>
+                <p class="desconto"><b class="precoDesconto text-danger"><i>Por:</i>R$ 5.019,00</b><br>
+            </div>
+            <div class="box_produto col" id="fogao"> 
+                <img src="./imagens/fogao1.png" width="150px" onclick="destaque(this)">               
+                <p class="descricao">Fogão 5 Bocas Preto Atlas</p>
+                <hr>
+                <p class="descricao">De:<s>R$ 2.189,00</s></p>
+                <p class="desconto"><b class="precoDesconto text-danger"><i>Por:</i>R$ 1.998,00</b><br>
+            </div>
+            <div class="box_produto col" id="microondas">
+                <img src="./imagens/microondas1.jpg" width="150px" onclick="destaque(this)">
+                <p class="descricao">Microondas Panasonic 10 Litros</p>
+                <hr>
+                <p class="descricao">De:<s>R$ 1.099,00</s></p>
+                <p class="desconto"><b class="precoDesconto text-danger"><i>Por:</i>R$ 759,00</b><br>
+            </div>
+            <div class="box_produto col" id="lavaroupa">
+                <img src="./imagens/maquinadelavar1.jpg" width="150px" onclick="destaque(this)">
+                <p class="descricao">Lavadora Brastemp 20 Litros</p>
+                <hr>
+                <p class="descricao">De:<s>R$ 2.799,00</s></p>
+                <p class="desconto"><b class="precoDesconto text-danger"><i>Por:</i>R$ 2.459,00</b><br>
+            </div>
+        </div>
+<br>
+       <div class="row text-center" id="geladeira">
+        <div class="box_produto col">
+            <img src="./imagens/geladeira2.jpg" width="150px" onclick="destaque(this)">
+            <p class="descricao">Geladeira Brastemp 540 litros</p>
+            <hr>
+            <p class="descricao">De:<s>R$ 6.389,00</s></p>
+            <p class="desconto"><b class="precoDesconto text-danger"><i>Por:</i>R$ 5.019,00</b><br>
+        </div>
+        <div class="box_produto col" id="fogao">
+            <img src="./imagens/fogao2.jpg" width="150px" onclick="destaque(this)">
+            <p class="descricao">Fogão 5 Bocas Preto Atlas</p>
+            <hr>
+            <p class="descricao">De:<s>R$ 2.189,00</s></p>
+            <p class="desconto"><b class="precoDesconto text-danger"><i>Por:</i>R$ 1.998,00</b><br>
+        </div>
+        <div class="box_produto col" id="microondas">
+            <img src="./imagens/microondas2.jpg" width="150px" onclick="destaque(this)">
+                <p class="descricao">Microondas Panasonic 10 Litros</p>
+                <hr>
+                <p class="descricao">De:<s>R$ 1.099,00</s></p>
+                <p class="desconto"><b class="precoDesconto text-danger"><i>Por:</i>R$ 759,00</b><br>
+        </div>
+        <div class="box_produto col" id="lavaroupa">
+            <img src="./imagens/lavaroupas3.png" width="150px" onclick="destaque(this)">
+                <p class="descricao">Lavadora Brastemp 20 Litros</p>
+                <hr>
+                <p class="descricao">De:<s>R$ 2.799,00</s></p>
+                <p class="desconto"><b class="precoDesconto text-danger"><i>Por:</i>R$ 2.459,00</b><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <br>
+    <div class="container-sm text-center">
+        <p class="text-danger" id="formas_pagamento"><b>Formas de pagamento</b></p>
+        <img src="./imagens/logo_pagamento.jpg" width="30%">
+        <p class="text-danger">&copy; Recod Pro</p>
+    </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
